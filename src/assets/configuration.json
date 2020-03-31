@@ -1,0 +1,25 @@
+{
+  "name":"David Prenninger",
+  "subtitle":"Software-Inventor",
+  "skills": [
+    {
+      "title": "JavaScript",
+      "value": 80
+    },
+    {
+      "title": "",
+      "value": 80
+    },
+    {
+      "title": "JavaScript",
+      "value": 80
+    },{
+      "title": "JavaScript",
+      "value": 80
+    },
+    {
+      "title": "JavaScript",
+      "value": 80
+    }
+  ]
+}

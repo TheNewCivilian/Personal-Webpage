@@ -1,0 +1,9 @@
+@import "@/assets/variables.scss";
+
+.b-accent {
+  background-color: $c-primary;
+  border-radius: $br-md;
+  padding: $space-sm $space-md;
+  color: $c-white;
+  border: 0;
+}

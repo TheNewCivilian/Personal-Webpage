@@ -1,18 +1,48 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PersonCard
+      class="home__person-card"
+      :retracted="retracted"
+    />
+    <div
+      class="main-content"
+      :class="retracted ? 'main-content--pressed' : ''"
+    >
+      <Skills />
+      <LifeLine />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import PersonCard from '@/components/PersonCard.vue';
+import Skills from '@/components/Skills.vue';
+import LifeLine from '@/components/LifeLine.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    PersonCard,
+    Skills,
+    LifeLine,
+  },
+  data() {
+    return {
+      retracted: false,
+    };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+
+.home {
+  height: 100%;
+}
+
+.toggle {
+  position: absolute;
+  bottom: 50px;
+}
+</style>
