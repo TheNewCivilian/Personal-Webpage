@@ -17,18 +17,17 @@ export default {
   @import "@/assets/variables.scss";
 
   .bar {
-    padding: 3px;
     display: flex;
     align-items: center;
     position: relative;
-    height: 16px;
+    height: 10px;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 5px;
     background-color: $c-primary-lightest;
   }
   .progress {
-    height: 16px;
+    height: 10px;
     background-color: $c-accent;
-    border-radius: 6px;
+    border-radius: 5px;
   }
 </style>

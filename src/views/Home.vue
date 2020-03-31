@@ -57,6 +57,11 @@ export default {
 
   .home {
     height: 100%;
+
+    &__content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
   }
 
 
@@ -70,6 +75,7 @@ export default {
     position: absolute;
     left: calc(50% - 30px);
     bottom: 20%;
+    color: $c-primary;
   }
 
   .fade-enter-active, .fade-leave-active {

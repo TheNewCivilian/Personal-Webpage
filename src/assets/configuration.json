@@ -1,6 +1,9 @@
 {
   "name":"David Prenninger",
   "subtitle":"Software-Inventor",
+  "location": "Europe",
+  "email": "david.prenninger@gmx.de",
+  "github": "TheNewCivilian",
   "skills": [
     {
       "title": "JavaScript",
