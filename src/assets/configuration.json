@@ -4,22 +4,33 @@
   "skills": [
     {
       "title": "JavaScript",
+      "examples": ["Vue","React","Vanilla","Redux","Node"],
       "value": 80
     },
     {
-      "title": "",
+      "title": "Python",
+      "examples": [],
       "value": 80
     },
     {
-      "title": "JavaScript",
-      "value": 80
-    },{
-      "title": "JavaScript",
-      "value": 80
+      "title": "Java",
+      "examples": [],
+      "value": 60
     },
     {
-      "title": "JavaScript",
-      "value": 80
+      "title": "C",
+      "examples": [],
+      "value": 50
+    },
+    {
+      "title": "Vala",
+      "examples": [],
+      "value": 30
+    },
+    {
+      "title": "C++",
+      "examples": [],
+      "value": 30
     }
   ]
 }

@@ -1,6 +1,6 @@
 <template>
-  <div class="person-container" :class="retracted ? 'person-container--retracted' : ''">
-    <div class="person-card" :class="retracted ? 'person-card--retracted' : ''">
+  <div class="person-container" :class="elevated ? 'person-container--retracted' : ''">
+    <div class="person-card" :class="elevated ? 'person-card--retracted' : ''">
       <div class="person-card__info">
         <h1>{{name}}</h1>
         <h3>{{subtitle}}</h3>
@@ -16,9 +16,8 @@
           </span>
         </div>
       </div>
-      <ProfilePicture :elevated="!retracted"/>
+      <ProfilePicture :elevated="!elevated"/>
     </div>
-    <button class="b-accent" >Show More</button>
   </div>
 </template>
 
@@ -31,9 +30,6 @@ import ProfilePicture from './ProfilePicture.vue';
 const { name, subtitle } = require('../assets/configuration.json');
 
 export default {
-  props: {
-    retracted: Boolean,
-  },
   components: {
     ProfilePicture,
     MapMarkerOutline,
@@ -45,6 +41,11 @@ export default {
       name,
       subtitle,
     };
+  },
+  computed: {
+    elevated() {
+      return this.$store.getters.detailsShown;
+    },
   },
 };
 </script>
