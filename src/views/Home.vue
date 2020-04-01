@@ -9,22 +9,26 @@
         <ArrowDown />
       </button>
     </transition>
-    <div
-      class="home__content"
-      :class="retracted ? 'main-content--pressed' : ''"
-    >
-      <Skills />
-      <LifeLine />
-    </div>
+    <transition name="fade">
+      <div
+        v-if="detailsShown"
+        class="home__content"
+        :class="retracted ? 'main-content--pressed' : ''"
+      >
+        <Skills />
+        <LifeLine :timeLineElements="cv"/>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import PersonCard from '@/components/PersonCard.vue';
 import Skills from '@/components/Skills.vue';
 import LifeLine from '@/components/LifeLine.vue';
 import ArrowDown from 'vue-material-design-icons/ArrowDown.vue';
+
+const { cv } = require('../assets/configuration.json');
 
 export default {
   name: 'Home',
@@ -37,6 +41,7 @@ export default {
   data() {
     return {
       retracted: false,
+      cv,
     };
   },
   computed: {
@@ -58,9 +63,14 @@ export default {
   .home {
     height: 100%;
 
+    &__person {
+      z-index: 2;
+    }
+
     &__content {
-      max-width: 850px;
-      margin: 0 auto;
+      display: flex;
+      z-index: 2;
+      justify-content: center;
     }
   }
 

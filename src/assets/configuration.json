@@ -35,5 +35,41 @@
       "examples": [],
       "value": 30
     }
+  ],
+  "cv": [
+    {
+      "type":"education",
+      "title": "Study at University of Augsburg",
+      "subtitle": "Computer Science Study",
+      "date": "Since 2016",
+      "details": [
+        {
+          "type": "github",
+          "text":"",
+          "linkText":"Show on Github"
+        }
+      ]
+    },
+    {
+      "type":"business",
+      "title": "Study at University of Augsburg",
+      "subtitle": "Computer Science Study",
+      "date": "Since 2016",
+      "details": []
+    },
+    {
+      "type":"social",
+      "title": "Study at University of Augsburg",
+      "subtitle": "Computer Science Study",
+      "date": "Since 2016",
+      "details": []
+    },
+    {
+      "type":"work",
+      "title": "Study at University of Augsburg",
+      "subtitle": "Computer Science Study",
+      "date": "Since 2016",
+      "details": []
+    }
   ]
 }
