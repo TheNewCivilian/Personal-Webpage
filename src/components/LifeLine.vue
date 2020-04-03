@@ -55,8 +55,10 @@ export default {
 
   .life-line {
     position: relative;
-    width: 538px;
-    margin-left: $space-md;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 50px;
 
     &__timeline {
       padding: 20px;

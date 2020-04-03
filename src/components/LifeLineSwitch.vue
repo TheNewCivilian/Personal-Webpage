@@ -73,6 +73,7 @@ export default {
 
       &--selected {
         color: #fff;
+        font-weight: 600;
       }
 
       &--right {

@@ -70,7 +70,7 @@ export default {
     &-card {
       border-radius: 8px;
       width: 90%;
-      max-width: fit-content;
+      max-width: 800px;
       transition: box-shadow .5s;
       display: flex;
       justify-content: space-evenly;

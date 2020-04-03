@@ -15,7 +15,10 @@
         class="home__content"
         :class="retracted ? 'main-content--pressed' : ''"
       >
-        <Skills />
+        <div class="home__content__side">
+          <Skills />
+          <ShoutOut />
+        </div>
         <LifeLine />
       </div>
     </transition>
@@ -26,6 +29,7 @@
 import PersonCard from '@/components/PersonCard.vue';
 import Skills from '@/components/Skills.vue';
 import LifeLine from '@/components/LifeLine.vue';
+import ShoutOut from '@/components/ShoutOut.vue';
 import ArrowDown from 'vue-material-design-icons/ArrowDown.vue';
 
 export default {
@@ -35,6 +39,7 @@ export default {
     Skills,
     LifeLine,
     ArrowDown,
+    ShoutOut,
   },
   data() {
     return {
@@ -68,6 +73,14 @@ export default {
       display: flex;
       z-index: 2;
       justify-content: center;
+      align-content: center;
+      height: fit-content;
+      flex-direction: column;
+
+      &__side {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 

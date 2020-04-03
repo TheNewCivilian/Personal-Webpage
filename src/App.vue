@@ -12,7 +12,7 @@
     color: $c-primary;
     background-color: $c-white;
     height: 100%;
-    font-family: 'Cantarell', sans-serif;
+    font-family: $font;
     margin: 0;
   }
 </style>
