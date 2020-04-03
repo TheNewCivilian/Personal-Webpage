@@ -2,7 +2,6 @@
   <div class="home">
     <PersonCard
       class="home__person"
-      :retracted="retracted"
     />
     <transition name="fade">
       <button v-if="!detailsShown" class="toggle" @click="toggleDetails">
@@ -13,11 +12,10 @@
       <div
         v-if="detailsShown"
         class="home__content"
-        :class="retracted ? 'main-content--pressed' : ''"
       >
         <div class="home__content__side">
-          <Skills />
           <ShoutOut />
+          <Skills />
         </div>
         <LifeLine />
       </div>
@@ -40,11 +38,6 @@ export default {
     LifeLine,
     ArrowDown,
     ShoutOut,
-  },
-  data() {
-    return {
-      retracted: false,
-    };
   },
   computed: {
     detailsShown() {
@@ -80,6 +73,11 @@ export default {
       &__side {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+
+        @media (min-width: 840px) {
+          flex-direction: row;
+        }
       }
     }
   }
@@ -94,8 +92,12 @@ export default {
     font-size: 40px;
     position: absolute;
     left: calc(50% - 30px);
-    bottom: 20%;
+    bottom: 10%;
     color: $c-primary;
+
+    @media (min-height: 800px) {
+      bottom: 20%;
+    }
   }
 
   .fade-enter-active, .fade-leave-active {

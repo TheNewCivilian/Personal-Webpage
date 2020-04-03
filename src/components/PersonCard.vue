@@ -8,8 +8,8 @@
           <span class="person-card__row">
             <MapMarkerOutline class="person-card__icon" /> Augsburg
           </span>
-          <a class="person-card__row">
-            <EmailOutline class="person-card__icon" /> david.prenninger@gmx.de
+          <a :href="`mailto:${email}`" class="person-card__row">
+            <EmailOutline class="person-card__icon" /> {{email}}
           </a>
           <span class="person-card__row">
             <Github class="person-card__icon" /> TheNewCivilian
@@ -27,7 +27,7 @@ import EmailOutline from 'vue-material-design-icons/EmailOutline.vue';
 import Github from 'vue-material-design-icons/GithubCircle.vue';
 import ProfilePicture from './ProfilePicture.vue';
 
-const { name, subtitle } = require('../assets/configuration.json');
+const { name, subtitle, email } = require('../assets/configuration.json');
 
 export default {
   components: {
@@ -40,6 +40,7 @@ export default {
     return {
       name,
       subtitle,
+      email,
     };
   },
   computed: {
@@ -63,7 +64,11 @@ export default {
       transition: height 3s;
 
       &--retracted {
-        height: 310px;
+        height: 550px;
+
+        @media (min-width: 700px) {
+           height: 310px;
+        }
       }
     }
 
@@ -77,6 +82,11 @@ export default {
       align-items: center;
       padding: $space-lg;
       border: 1px solid $c-primary-lightest;
+      flex-direction: column;
+
+      @media (min-width: 700px) {
+        flex-direction: row;
+      }
 
       &--retracted {
         box-shadow: $bs-primary;
@@ -89,12 +99,19 @@ export default {
 
       &__container {
         display: flex;
+        flex-direction: column;
+
+        @media (min-width: 840px) {
+          flex-direction: row;
+        }
       }
 
       &__row {
         display: flex;
         align-items: center;
         padding-right: $space-md;
+        text-decoration: none;
+        color: $c-primary;
       }
 
       &__icon {

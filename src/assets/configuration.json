@@ -17,13 +17,18 @@
     },
     {
       "title": "Python",
-      "examples": [],
+      "examples": ["Plain","Flask","Falcon","Django"],
       "value": 80
     },
     {
       "title": "Java",
       "examples": [],
       "value": 60
+    },
+    {
+      "title": "Dart",
+      "examples": [],
+      "value": 55
     },
     {
       "title": "C",
@@ -44,7 +49,7 @@
   "cv": [
     {
       "type":"business",
-      "title": "Internship at Eurail BV.",
+      "title": "Internship - Eurail BV.",
       "subtitle": "7 month Front-End Intern at an international Travel company",
       "date": "2020",
       "details": [{
@@ -119,14 +124,15 @@
     },
     {
       "type":"business",
-      "title": "Trainee - AscTec",
+      "title": "Internship - AscTec",
       "subtitle": "Worked in the production of the leading UAS drone technology developer & manu­facturer.",
       "date": "2014",
       "details": [
         {
         "type": "web",
         "text":"",
-        "linkText":"Asctec.com"
+        "linkText":"Asctec.com",
+        "logo":"/img/asctec.jpg"
       }]
     },
     {

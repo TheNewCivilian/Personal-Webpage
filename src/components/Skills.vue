@@ -36,12 +36,18 @@ export default {
 @import "@/assets/variables.scss";
 
 .skills {
-  width: 250px;
   box-shadow: $bs-primary;
   padding: 20px;
   border-radius: $br-md;
   text-align: left;
   height: fit-content;
+  margin: 20px 10px;
+
+  @media (min-width: 840px) {
+    flex-direction: column;
+    margin: 0;
+    width: 250px;
+  }
 
   &__title {
     font-size: 24px;

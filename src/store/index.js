@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    detailsShown: false,
+    detailsShown: window.screen.width < 700,
   },
   mutations: {
     TOGGLE_DETAILS(currentState, payload) {

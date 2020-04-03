@@ -6,7 +6,10 @@
     <p class="shout-out__description">
       {{configuration.shoutOut.description}}
     </p>
-    <button class="shout-out__button">
+    <button
+      class="shout-out__button"
+      @click="sendMail"
+    >
       Contact me!
     </button>
   </div>
@@ -21,6 +24,11 @@ export default {
       configuration,
     };
   },
+  methods: {
+    sendMail() {
+      window.location.href = `mailto:${configuration.email}`;
+    },
+  },
 };
 </script>
 
@@ -31,10 +39,18 @@ export default {
     box-shadow: $bs-primary;
     padding: 30px;
     border-radius: $br-md;
-    margin-left: $space-md;
-    max-width: 480px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
+    margin: 20px 10px;
+
+    @media (min-width: 840px) {
+      flex-direction: column;
+      margin-left: $space-md;
+      max-width: 495px;
+      margin: 0;
+      margin-right: 15px;
+    }
 
     &__title {
       font-size: 30px;
