@@ -1,21 +1,51 @@
 <template>
   <div class="life-line">
-    <div v-for="(entry, index) in timeLineElements" :key="`tl-${index}`">
-      <LifeLineEntry :entry="entry" />
-      <div v-if="index != timeLineElements.length - 1" class="life-line__seperator"/>
+    <LifeLineSwitch :switchOptions="switchOptions" @input="selectOption"/>
+    <div
+      class="life-line__timeline"
+      :class="fadeOut?'life-line__timeline--fade-out':'life-line__timeline--fade-in'"
+    >
+      <div
+        v-for="(entry, index) in configuration[selectedOption]"
+        :key="`tl-${index}`"
+        class="life-line__element"
+      >
+        <LifeLineEntry :entry="entry" />
+        <div v-if="index != configuration[selectedOption].length - 1" class="life-line__seperator"/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import LifeLineEntry from '@/components/LifeLineEntry.vue';
+import LifeLineSwitch from '@/components/LifeLineSwitch.vue';
+
+
+const configuration = require('../assets/configuration.json');
 
 export default {
-  props: {
-    timeLineElements: Array,
+  data() {
+    return {
+      switchOptions: ['cv', 'projects'],
+      selectedOption: 'cv',
+      configuration,
+      fadeOut: false,
+    };
   },
   components: {
     LifeLineEntry,
+    LifeLineSwitch,
+  },
+  methods: {
+    selectOption(value) {
+      this.fadeOut = true;
+
+      setTimeout(() => {
+        this.fadeOut = false;
+        this.selectedOption = value;
+      }, 500);
+    },
   },
 };
 </script>
@@ -27,8 +57,18 @@ export default {
     position: relative;
     width: 538px;
     margin-left: $space-md;
-    min-height: min-content;
-    margin-bottom: 100px;
+
+    &__timeline {
+      padding: 20px;
+
+      &--fade-in {
+        animation: fadein .8s;
+      }
+
+      &--fade-out {
+        animation: fadeout .5s;
+      }
+    }
 
     &__seperator {
       margin-left: 42px;
@@ -36,5 +76,15 @@ export default {
       height: 50px;
       background-color: $c-primary-lighter;
     }
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
   }
 </style>

@@ -16,7 +16,7 @@
         :class="retracted ? 'main-content--pressed' : ''"
       >
         <Skills />
-        <LifeLine :timeLineElements="cv"/>
+        <LifeLine />
       </div>
     </transition>
   </div>
@@ -27,8 +27,6 @@ import PersonCard from '@/components/PersonCard.vue';
 import Skills from '@/components/Skills.vue';
 import LifeLine from '@/components/LifeLine.vue';
 import ArrowDown from 'vue-material-design-icons/ArrowDown.vue';
-
-const { cv } = require('../assets/configuration.json');
 
 export default {
   name: 'Home',
@@ -41,7 +39,6 @@ export default {
   data() {
     return {
       retracted: false,
-      cv,
     };
   },
   computed: {

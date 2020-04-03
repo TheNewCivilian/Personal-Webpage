@@ -5,6 +5,7 @@
       <BriefcaseOutline class="entry__icon-off" v-if="entry.type == 'business'"/>
       <Hammer class="entry__icon-off" v-if="entry.type == 'work'"/>
       <AccountGroupOutline class="entry__icon-off" v-if="entry.type == 'social'"/>
+      <MedalOutline class="entry__icon-off" v-if="entry.type == 'competition'"/>
     </div>
     <div class="entry__head">
       <div class="entry__head__text">
@@ -19,7 +20,7 @@
     <div
       class="entry__detail"
       v-for="(detail, detailIndex) in entry.details"
-      :key="`tl-${index}-de-${detailIndex}`"
+      :key="`tl-${entry.title}-de-${detailIndex}`"
     >
       <div class="entry__detail__icon">
         <NewspaperVariantMultipleOutline v-if="detail.type == 'media'"/>
@@ -32,8 +33,20 @@
         <span class="entry__detail__text__title">
           {{detail.text}}
         </span>
-        <a>{{detail.linkText}}</a>
+        <a
+          class="entry__detail__text__link"
+          :href="detail.linkURL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{detail.linkText}}
+        </a>
       </div>
+        <img
+          class="entry__detail__logo"
+          v-if="detail.logo"
+          :src="detail.logo"
+        />
     </div>
   </div>
 </template>
@@ -48,6 +61,7 @@ import Github from 'vue-material-design-icons/GithubCircle.vue';
 import Web from 'vue-material-design-icons/Web.vue';
 import FileOutline from 'vue-material-design-icons/FileOutline.vue';
 import Paperclip from 'vue-material-design-icons/Paperclip.vue';
+import MedalOutline from 'vue-material-design-icons/Medal.vue';
 
 export default {
   props: {
@@ -63,6 +77,7 @@ export default {
     Web,
     FileOutline,
     Paperclip,
+    MedalOutline,
   },
 };
 </script>
@@ -106,6 +121,7 @@ export default {
       &__text {
         display: flex;
         flex-direction: column;
+        padding-right: 5px;
 
         &__title {
           font-weight: 600;
@@ -117,6 +133,7 @@ export default {
       }
 
       &__date {
+        flex: 0 0 40px;
         color: $c-primary-lighter;
       }
     }
@@ -142,10 +159,20 @@ export default {
         flex-direction: column;
         text-align: left;
         padding: 0 10px;
+        flex-grow: 1;
 
         &__title {
           font-weight: 600;
         }
+
+        &__link {
+          text-decoration: none;
+          color: $c-primary-lighter;
+        }
+      }
+
+      &__logo {
+        height: 30px;
       }
     }
   }

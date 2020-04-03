@@ -38,6 +38,102 @@
   ],
   "cv": [
     {
+      "type":"business",
+      "title": "Internship at Eurail BV.",
+      "subtitle": "7 month Front-End Intern at an international Travel company",
+      "date": "2020",
+      "details": [{
+        "type": "web",
+        "text":"",
+        "linkText":"Eurail.eu",
+        "linkURL":"http://qbilon.io",
+        "logo":"/img/eurail.svg"
+      }]
+    },
+    {
+      "type":"social",
+      "title": "Youth exchange Program Tanzania",
+      "subtitle": "Discussing topics around justice and fairness together with 10 Tanzanians.",
+      "date": "2018",
+      "details": []
+    },
+    {
+      "type":"business",
+      "title": "Research Associate - Augsburg University",
+      "subtitle": "Working for the academic chair of Prof. Dr. Bauer.",
+      "date": "Since 2018",
+      "details": [{
+        "type": "web",
+        "text":"",
+        "linkText":"Qbilon.io",
+        "linkURL":"http://qbilon.io",
+        "logo":"/img/qbilon.webp"
+      }]
+    },
+    {
+      "type":"business",
+      "title": "IT Support & Developer - IT.WiWi Augsburg University",
+      "subtitle": "Serviced and monitored over 900 devices. Worked with Highly automated processes and software rollouts.",
+      "date": "March - August 2018",
+      "details": []
+    },
+    {
+      "type":"education",
+      "title": "Study at University of Augsburg",
+      "subtitle": "Computer Science Study",
+      "date": "Since 2016",
+      "details": []
+    },
+    {
+      "type":"education",
+      "title": "A Level - Gymnasium Gröbenzell",
+      "subtitle": "Rigged, monitored and organized big school events. ",
+      "date": "2016",
+      "details": []
+    },
+    {
+      "type":"social",
+      "title": "Stage, Light and Sound Department",
+      "subtitle": "Rigged, monitored and organized big school events. ",
+      "date": "2013 - 2016",
+      "details": []
+    },
+    {
+      "type":"social",
+      "title": "Youth Work - Evangelical Lutheran Church",
+      "subtitle": "Organized events, youth groups, camps etc..",
+      "date": "2012 - 2016",
+      "details": []
+    },
+    {
+      "type":"competition",
+      "title": "Second place in state \"Jugend Forscht\"",
+      "subtitle": "Participated with an automated charging station station for messuring capacity differences of AAA accumulators.",
+      "date": "2014",
+      "details": []
+    },
+    {
+      "type":"business",
+      "title": "Trainee - AscTec",
+      "subtitle": "Worked in the production of the leading UAS drone technology developer & manu­facturer.",
+      "date": "2014",
+      "details": [
+        {
+        "type": "web",
+        "text":"",
+        "linkText":"Asctec.com"
+      }]
+    },
+    {
+      "type":"competition",
+      "title": "Second place in regional \"Jugend Forscht\"",
+      "subtitle": "Participated with an automated installation for street dust recycling.",
+      "date": "2013",
+      "details": []
+    }
+  ],
+  "projects": [
+    {
       "type":"education",
       "title": "Study at University of Augsburg",
       "subtitle": "Computer Science Study",
@@ -49,27 +145,6 @@
           "linkText":"Show on Github"
         }
       ]
-    },
-    {
-      "type":"business",
-      "title": "Study at University of Augsburg",
-      "subtitle": "Computer Science Study",
-      "date": "Since 2016",
-      "details": []
-    },
-    {
-      "type":"social",
-      "title": "Study at University of Augsburg",
-      "subtitle": "Computer Science Study",
-      "date": "Since 2016",
-      "details": []
-    },
-    {
-      "type":"work",
-      "title": "Study at University of Augsburg",
-      "subtitle": "Computer Science Study",
-      "date": "Since 2016",
-      "details": []
     }
   ]
 }

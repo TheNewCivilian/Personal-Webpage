@@ -13,5 +13,6 @@
     background-color: $c-white;
     height: 100%;
     font-family: 'Cantarell', sans-serif;
+    margin: 0;
   }
 </style>
