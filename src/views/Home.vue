@@ -94,6 +94,7 @@ export default {
     left: calc(50% - 30px);
     bottom: 10%;
     color: $c-primary;
+    padding: 0;
 
     @media (min-height: 800px) {
       bottom: 20%;
