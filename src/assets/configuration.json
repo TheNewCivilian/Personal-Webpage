@@ -61,6 +61,13 @@
       }]
     },
     {
+      "type":"business",
+      "title": "Freelancer - Software Development",
+      "subtitle": "In addition to my studies and work, I work as freelancer. If you have any request, don't hasitate to contact me.",
+      "date": "Since 2019",
+      "details": []
+    },
+    {
       "type":"social",
       "title": "Youth exchange Program Tanzania",
       "subtitle": "Discussing topics around justice and fairness together with 10 Tanzanians.",
@@ -131,7 +138,8 @@
         {
         "type": "web",
         "text":"",
-        "linkText":"Asctec.com",
+        "linkText":"Intel Falcon 8 former Asctec Falcon 8",
+        "linkURL":"https://www.intel.de/content/www/de/de/products/drones/falcon-8.html",
         "logo":"/img/asctec.jpg"
       }]
     },
@@ -145,15 +153,73 @@
   ],
   "projects": [
     {
-      "type":"education",
-      "title": "Study at University of Augsburg",
-      "subtitle": "Computer Science Study",
-      "date": "Since 2016",
+      "type":"work",
+      "title": "#WirVsVirus Hackathon",
+      "subtitle": "Development of an indoor activity advisory system.",
+      "date": "2020",
       "details": [
         {
           "type": "github",
           "text":"",
+          "linkURL":"https://github.com/whattodo-seitanrouladen/backend",
           "linkText":"Show on Github"
+        }
+      ]
+    },
+    {
+      "type":"work",
+      "title": "COVID-19 Dashboard",
+      "subtitle": "Combining and displaying Data of different distributors about the COVID-19 crisis.",
+      "date": "2020",
+      "details": [
+        {
+          "type": "web",
+          "text":"",
+          "linkURL":"https://covid-board.com/",
+          "linkText":"Open Application",
+          "logo":"/img/covid.svg"
+        }
+      ]
+    },
+    {
+      "type":"work",
+      "title": "SWA Hackathon \"Neue Wege Augsburg\"",
+      "subtitle": "Developed a multimodal transportation API + adapted a Alexa Skilll as Service in only 24 hours.",
+      "date": "2018",
+      "details": [
+        {
+          "type": "github",
+          "text":"",
+          "linkURL":"https://github.com/whattodo-seitanrouladen/backend",
+          "linkText":"Show on Github"
+        }
+      ]
+    },
+    {
+      "type":"work",
+      "title": "Application - Residual Class Visualisation",
+      "subtitle": "A small c++ application to display residual classes",
+      "date": "2016",
+      "details": [
+        {
+          "type": "github",
+          "text":"",
+          "linkURL":"https://github.com/TheNewCivilian/Restklassengenerator-Residue-class-visualizer",
+          "linkText":"Show on Github"
+        }
+      ]
+    },
+    {
+      "type":"work",
+      "title": "Many more...",
+      "subtitle": "Discover some of my projects on Github",
+      "date": "",
+      "details": [
+        {
+          "type": "github",
+          "text":"",
+          "linkURL":"https://github.com/TheNewCivilian/",
+          "linkText":"Github"
         }
       ]
     }
