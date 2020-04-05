@@ -95,6 +95,7 @@ export default {
     bottom: 10%;
     color: $c-primary;
     padding: 0;
+    cursor: pointer;
 
     @media (min-height: 800px) {
       bottom: 20%;
