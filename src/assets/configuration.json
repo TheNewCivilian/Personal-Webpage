@@ -84,7 +84,7 @@
         "text":"",
         "linkText":"Qbilon.io",
         "linkURL":"http://qbilon.io",
-        "logo":"/img/qbilon.webp"
+        "logo":"/img/qbilon.png"
       }]
     },
     {
@@ -92,6 +92,13 @@
       "title": "IT Support & Developer - IT.WiWi Augsburg University",
       "subtitle": "Serviced and monitored over 900 devices. Worked with Highly automated processes and software rollouts.",
       "date": "March - August 2018",
+      "details": []
+    },
+    {
+      "type":"social",
+      "title": "Member of the student association",
+      "subtitle": "Organising events and supporting students in their needs. ",
+      "date": "Since 2016",
       "details": []
     },
     {

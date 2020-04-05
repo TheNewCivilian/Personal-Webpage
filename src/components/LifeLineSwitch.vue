@@ -48,6 +48,7 @@ export default {
     border-radius: 20px;
     height: $slider-height;
     margin: 0 auto;
+    cursor: pointer;
 
     &__slider {
       position: absolute;

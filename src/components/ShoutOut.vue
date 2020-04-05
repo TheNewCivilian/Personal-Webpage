@@ -76,6 +76,7 @@ export default {
       padding: $space-sm $space-md;
       transition: background-color 1s;
       transition: box-shadow 1s;
+      cursor: pointer;
 
       &:hover {
         background-color: lighten($c-accent,1);
