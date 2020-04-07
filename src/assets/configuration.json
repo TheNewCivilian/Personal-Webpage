@@ -1,6 +1,6 @@
 {
   "name":"David Prenninger",
-  "subtitle":"Software-Inventor",
+  "subtitle":"IT-Consultant, Developer",
   "location": "Europe",
   "email": "david.prenninger@gmx.de",
   "github": "TheNewCivilian",
@@ -36,14 +36,9 @@
       "value": 50
     },
     {
-      "title": "Vala",
+      "title": "Vala | C# | C++ | Ruby",
       "examples": [],
-      "value": 30
-    },
-    {
-      "title": "C++",
-      "examples": [],
-      "value": 30
+      "value": 35
     }
   ],
   "cv": [
