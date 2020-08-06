@@ -1,5 +1,10 @@
 <template>
-  <div class="home">
+  <div
+    class="home"
+    @wheel="toggleDetails"
+    @swipe="toggleDetails"
+    ref="rootDiv"
+  >
     <PersonCard
       class="home__person"
     />
@@ -24,6 +29,7 @@
 </template>
 
 <script>
+import SwipeListener from 'swipe-listener';
 import PersonCard from '@/components/PersonCard.vue';
 import Skills from '@/components/Skills.vue';
 import LifeLine from '@/components/LifeLine.vue';
@@ -43,6 +49,9 @@ export default {
     detailsShown() {
       return this.$store.getters.detailsShown;
     },
+  },
+  mounted() {
+    SwipeListener(this.$refs.rootDiv);
   },
   methods: {
     toggleDetails() {
