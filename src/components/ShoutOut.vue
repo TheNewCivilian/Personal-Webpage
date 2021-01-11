@@ -27,7 +27,7 @@ export default {
   methods: {
     sendMail() {
       const mailAdress = configuration.email;
-      window.location.href = 'mailto' + mailAdress; // eslint-disable-line 
+      window.location.href = 'mailto:' + mailAdress; // eslint-disable-line 
     },
   },
 };

@@ -1,12 +1,12 @@
 {
   "name":"David Prenninger",
-  "subtitle":"IT-Consultant, Developer",
+  "subtitle":"Optimist, Developer, Supporter",
   "location": "Europe",
-  "email": "david.prenninger@gmx.de",
+  "email": "david@prenninger.de",
   "github": "TheNewCivilian",
   "shoutOut": {
     "title": "Hello World!",
-    "description": "I am curious about your Ideas, Projects and Challanges. Since my study is empowering me to make software in all different ways I always try to improve my personal workflow and solve daily problems. Despite my tech-hobbies I love running, traveling and being part of social projects. I'm always in search for the most promising and productive approach to achieve my goals.",
+    "description": "I am curious about your ideas, projects and challanges. Since my study is empowering me to make software in all different ways I always try to improve my personal workflow and solve daily problems. Despite my tech-hobbies I love running, traveling and being part of social projects. I'm always in search for the most promising and productive approach to achieve my goals.",
     "contact":"Contact me!"
   },
   "skills": [
@@ -17,7 +17,7 @@
     },
     {
       "title": "Python",
-      "examples": ["Plain","Flask","Falcon","Django"],
+      "examples": ["Plain","Flask","Falcon","Django", "Tensorflow"],
       "value": 80
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "title": "Dart",
-      "examples": [],
+      "examples": ["Flutter"],
       "value": 55
     },
     {
@@ -42,33 +42,7 @@
     }
   ],
   "cv": [
-    {
-      "type":"business",
-      "title": "Internship - Eurail BV.",
-      "subtitle": "7 month Front-End Intern at an international Travel company",
-      "date": "2020",
-      "details": [{
-        "type": "web",
-        "text":"",
-        "linkText":"Eurail.eu",
-        "linkURL":"http://qbilon.io",
-        "logo":"/img/eurail.svg"
-      }]
-    },
-    {
-      "type":"business",
-      "title": "Freelancer - Software Development",
-      "subtitle": "In addition to my studies and work, I work as freelancer. If you have any request, don't hasitate to contact me.",
-      "date": "Since 2019",
-      "details": []
-    },
-    {
-      "type":"social",
-      "title": "Youth exchange Program Tanzania",
-      "subtitle": "Discussing topics around justice and fairness together with 10 Tanzanians.",
-      "date": "2018",
-      "details": []
-    },
+
     {
       "type":"business",
       "title": "Research Associate - Augsburg University",
@@ -81,6 +55,33 @@
         "linkURL":"http://qbilon.io",
         "logo":"/img/qbilon.png"
       }]
+    },
+    {
+      "type":"business",
+      "title": "Freelancer - Software Development",
+      "subtitle": "In addition to my studies and work, I work as freelancer. If you have any request, don't hesitate to contact me.",
+      "date": "Since 2019",
+      "details": []
+    },
+    {
+      "type":"business",
+      "title": "Internship - Eurail BV.",
+      "subtitle": "7 month Front-End Intern at an international Travel company",
+      "date": "2020",
+      "details": [{
+        "type": "web",
+        "text":"",
+        "linkText":"Eurail.eu",
+        "linkURL":"http://eurail.com",
+        "logo":"/img/eurail.svg"
+      }]
+    },
+    {
+      "type":"social",
+      "title": "Youth exchange Program Tanzania",
+      "subtitle": "Discussing topics around justice and fairness together with 10 Tanzanians.",
+      "date": "2018",
+      "details": []
     },
     {
       "type":"business",
@@ -156,6 +157,36 @@
   "projects": [
     {
       "type":"work",
+      "title": "Kingscastle.io",
+      "subtitle": "Digitalizing the iconic pen and paper game Kingscastle",
+      "date": "2020",
+      "details": [
+        {
+          "type": "web",
+          "text":"",
+          "linkURL":"https://kingscastle.io",
+          "linkText":"Kingscastle.io",
+          "logo":"/img/kingscastle.svg"
+        }
+      ]
+    },
+    {
+      "type":"work",
+      "title": "Winner team member of the MobiData Hackathon",
+      "subtitle": "Development of a cargo-bike routing system",
+      "date": "2020",
+      "details": [
+        {
+          "type": "github",
+          "text":"",
+          "linkURL":"https://github.com/cargorocket",
+          "linkText":"Show on Github",
+          "logo":"/img/cargorocket.png"
+        }
+      ]
+    },
+    {
+      "type":"work",
       "title": "#WirVsVirus Hackathon",
       "subtitle": "Development of an indoor activity advisory system.",
       "date": "2020",
@@ -163,8 +194,9 @@
         {
           "type": "github",
           "text":"",
-          "linkURL":"https://github.com/whattodo-seitanrouladen/backend",
-          "linkText":"Show on Github"
+          "linkURL":"https://wirvsvirus.org/",
+          "linkText":"wirvsvirus.org",
+          "logo":"/img/wirvsvirus.png"
         }
       ]
     },

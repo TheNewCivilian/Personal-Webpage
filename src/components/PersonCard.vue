@@ -6,14 +6,14 @@
         <h3>{{subtitle}}</h3>
         <div class="person-card__container">
           <span class="person-card__row">
-            <MapMarkerOutline class="person-card__icon" /> Augsburg
+            <MapMarkerOutline class="person-card__icon" /> {{location}}
           </span>
           <a :href="`mailto:${email}`" class="person-card__row">
             <EmailOutline class="person-card__icon" /> {{email}}
           </a>
-          <span class="person-card__row">
+          <a href="https://github.com/TheNewCivilian" class="person-card__row">
             <Github class="person-card__icon" /> TheNewCivilian
-          </span>
+          </a>
         </div>
       </div>
       <ProfilePicture :elevated="!elevated"/>
@@ -27,7 +27,12 @@ import EmailOutline from 'vue-material-design-icons/EmailOutline.vue';
 import Github from 'vue-material-design-icons/GithubCircle.vue';
 import ProfilePicture from './ProfilePicture.vue';
 
-const { name, subtitle, email } = require('../assets/configuration.json');
+const {
+  name,
+  subtitle,
+  email,
+  location,
+} = require('../assets/configuration.json');
 
 export default {
   components: {
@@ -41,6 +46,7 @@ export default {
       name,
       subtitle,
       email,
+      location,
     };
   },
   computed: {
