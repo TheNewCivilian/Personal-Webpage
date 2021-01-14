@@ -16,17 +16,16 @@
 </template>
 
 <script>
-const configuration = require('../assets/configuration.json');
-
 export default {
   data() {
     return {
-      configuration,
+      // eslint-disable-next-line import/no-dynamic-require, global-require
+      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
     };
   },
   methods: {
     sendMail() {
-      const mailAdress = configuration.email;
+      const mailAdress = this.configuration.email;
       window.location.href = 'mailto:' + mailAdress; // eslint-disable-line 
     },
   },
@@ -37,13 +36,19 @@ export default {
   @import "@/assets/variables.scss";
 
   .shout-out {
-    box-shadow: $bs-primary;
+    // box-shadow: $bs-primary;
+    border: 1px solid $c-primary-lightest;
+    transition: box-shadow 0.5s ease-in-out;
     padding: 30px;
     border-radius: $br-md;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     margin: 20px 10px;
+
+    &:hover {
+      box-shadow: $bs-primary;
+    }
 
     @media (min-width: 840px) {
       flex-direction: column;

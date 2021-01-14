@@ -2,14 +2,14 @@
   <div class="person-container" :class="elevated ? 'person-container--retracted' : ''">
     <div class="person-card" :class="elevated ? 'person-card--retracted' : ''">
       <div class="person-card__info">
-        <h1>{{name}}</h1>
-        <h3>{{subtitle}}</h3>
+        <h1>{{configuration.name}}</h1>
+        <h3>{{configuration.subtitle}}</h3>
         <div class="person-card__container">
           <span class="person-card__row">
-            <MapMarkerOutline class="person-card__icon" /> {{location}}
+            <MapMarkerOutline class="person-card__icon" /> {{configuration.location}}
           </span>
-          <a :href="`mailto:${email}`" class="person-card__row">
-            <EmailOutline class="person-card__icon" /> {{email}}
+          <a :href="`mailto:${configuration.email}`" class="person-card__row">
+            <EmailOutline class="person-card__icon" /> {{configuration.email}}
           </a>
           <a href="https://github.com/TheNewCivilian" class="person-card__row">
             <Github class="person-card__icon" /> TheNewCivilian
@@ -27,13 +27,6 @@ import EmailOutline from 'vue-material-design-icons/EmailOutline.vue';
 import Github from 'vue-material-design-icons/GithubCircle.vue';
 import ProfilePicture from './ProfilePicture.vue';
 
-const {
-  name,
-  subtitle,
-  email,
-  location,
-} = require('../assets/configuration.json');
-
 export default {
   components: {
     ProfilePicture,
@@ -43,10 +36,8 @@ export default {
   },
   data() {
     return {
-      name,
-      subtitle,
-      email,
-      location,
+      // eslint-disable-next-line import/no-dynamic-require, global-require
+      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
     };
   },
   computed: {
@@ -95,7 +86,12 @@ export default {
       }
 
       &--retracted {
-        box-shadow: $bs-primary;
+        border: 1px solid $c-primary-lightest;
+        // box-shadow: $bs-primary;
+
+        &:hover {
+          box-shadow: $bs-primary;
+        }
       }
 
       &__info {

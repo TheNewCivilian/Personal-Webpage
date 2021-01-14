@@ -8,7 +8,7 @@ $c-red: #DB504A;
 $c-orange: #DD7230;
 $c-yellow:  #F4C95D;
 
-$bs-primary: 0px 0px 33px 0px rgba($c-primary,.2);
+$bs-primary: 0px 0px 15px 0px rgba($c-primary, 0.4);
 
 $br-md: 10px;
 
@@ -16,4 +16,6 @@ $space-lg: 30px;
 $space-md: 20px;
 $space-sm: 8px;
 
-$font: 'Source Sans Pro', sans-serif;
+$font: 'Roboto', sans-serif;
+$font-logo: 'Cormorant SC', serif;
+// $font: 'Source Sans Pro', sans-serif;

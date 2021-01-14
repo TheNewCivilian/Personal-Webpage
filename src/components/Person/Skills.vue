@@ -2,7 +2,11 @@
   <div class="skills">
     <h3 class="skills__title">Skills</h3>
     <div>
-      <div class="skills__item" v-for="(skill, index) in skills" :key="`skill-${index}`">
+      <div
+        class="skills__item"
+        v-for="(skill, index) in configuration.skills"
+        :key="`skill-${index}`"
+      >
         <span class="skills__item__title">
           {{skill.title}}
         </span>
@@ -16,9 +20,7 @@
 </template>
 
 <script>
-import ProgressBar from '@/components/ProgressBar.vue';
-
-const { skills } = require('../assets/configuration.json');
+import ProgressBar from '@/components/Person/ProgressBar.vue';
 
 export default {
   components: {
@@ -26,7 +28,8 @@ export default {
   },
   data() {
     return {
-      skills,
+      // eslint-disable-next-line import/no-dynamic-require, global-require
+      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
     };
   },
 };
@@ -36,12 +39,18 @@ export default {
 @import "@/assets/variables.scss";
 
 .skills {
-  box-shadow: $bs-primary;
+  //box-shadow: $bs-primary;
+  border: 1px solid $c-primary-lightest;
   padding: 20px;
   border-radius: $br-md;
   text-align: left;
   height: fit-content;
   margin: 20px 10px;
+  transition: box-shadow 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: $bs-primary;
+  }
 
   @media (min-width: 840px) {
     flex-direction: column;

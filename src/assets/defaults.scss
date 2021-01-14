@@ -5,5 +5,36 @@
   border-radius: $br-md;
   padding: $space-sm $space-md;
   color: $c-white;
+  font-family: $font;
   border: 0;
+  cursor: pointer;
+}
+
+.b-lite {
+  background-color: $c-white;
+  border-radius: $br-md;
+  padding: $space-sm $space-md;
+  color: $c-primary;
+  border: 0;
+  box-shadow: $bs-primary;
+  font-family: $font;
+  cursor: pointer;
+}
+
+.b-text{
+  background-color: $c-white;
+  border-radius: $br-md;
+  border: 0;
+  padding: 0;
+  color: $c-primary-lighter;
+  font-family: $font;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

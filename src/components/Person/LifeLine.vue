@@ -18,18 +18,16 @@
 </template>
 
 <script>
-import LifeLineEntry from '@/components/LifeLineEntry.vue';
-import LifeLineSwitch from '@/components/LifeLineSwitch.vue';
-
-
-const configuration = require('../assets/configuration.json');
+import LifeLineEntry from '@/components/Person/LifeLineEntry.vue';
+import LifeLineSwitch from '@/components/Person/LifeLineSwitch.vue';
 
 export default {
   data() {
     return {
       switchOptions: ['cv', 'projects'],
       selectedOption: 'cv',
-      configuration,
+      // eslint-disable-next-line import/no-dynamic-require, global-require
+      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
       fadeOut: false,
     };
   },

@@ -1,120 +1,33 @@
 <template>
-  <div
-    class="home"
-    @wheel="toggleDetails"
-    @swipe="toggleDetails"
-    ref="rootDiv"
-  >
-    <PersonCard
-      class="home__person"
-    />
-    <transition name="fade">
-      <button v-if="!detailsShown" class="toggle" @click="toggleDetails">
-        <ArrowDown />
-      </button>
-    </transition>
-    <transition name="fade">
-      <div
-        v-if="detailsShown"
-        class="home__content"
-      >
-        <div class="home__content__side">
-          <ShoutOut />
-          <Skills />
-        </div>
-        <LifeLine />
+    <div>
+      <Menue />
+      <div class="page">
+        <Start />
+        <People />
+        <Services />
       </div>
-    </transition>
-  </div>
+    </div>
 </template>
 
 <script>
-import SwipeListener from 'swipe-listener';
-import PersonCard from '@/components/PersonCard.vue';
-import Skills from '@/components/Skills.vue';
-import LifeLine from '@/components/LifeLine.vue';
-import ShoutOut from '@/components/ShoutOut.vue';
-import ArrowDown from 'vue-material-design-icons/ArrowDown.vue';
+import Menue from '../components/Menue.vue';
+import People from '../components/sections/People.vue';
+import Services from '../components/sections/Services.vue';
+import Start from '../components/sections/Start.vue';
 
 export default {
-  name: 'Home',
   components: {
-    PersonCard,
-    Skills,
-    LifeLine,
-    ArrowDown,
-    ShoutOut,
-  },
-  computed: {
-    detailsShown() {
-      return this.$store.getters.detailsShown;
-    },
-  },
-  mounted() {
-    SwipeListener(this.$refs.rootDiv);
-  },
-  methods: {
-    toggleDetails() {
-      this.$store.dispatch('showDetails');
-    },
+    Menue,
+    Start,
+    People,
+    Services,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-@import "@/assets/defaults.scss";
-
-  .home {
+<style>
+  .page {
     height: 100%;
-
-    &__person {
-      z-index: 2;
-    }
-
-    &__content {
-      display: flex;
-      z-index: 2;
-      justify-content: center;
-      align-content: center;
-      height: fit-content;
-      flex-direction: column;
-
-      &__side {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        @media (min-width: 840px) {
-          flex-direction: row;
-        }
-      }
-    }
-  }
-
-
-  .toggle {
-    width: 60px;
-    height: 60px;
-    border: 1px solid $c-primary-lightest;
-    background-color: transparent;
-    border-radius: 50%;
-    font-size: 40px;
-    position: absolute;
-    left: calc(50% - 30px);
-    bottom: 10%;
-    color: $c-primary;
-    padding: 0;
-    cursor: pointer;
-
-    @media (min-height: 800px) {
-      bottom: 20%;
-    }
-  }
-
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity 1s;
-  }
-  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-    opacity: 0;
+    scroll-snap-type: y mandatory;
   }
 </style>

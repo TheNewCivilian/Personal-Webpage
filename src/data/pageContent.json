@@ -1,0 +1,51 @@
+{
+    "title": "Prenninger",
+    "start" : {
+        "pretitle":"We are the Prenninger's!",
+        "title": "Welcome to our digital headquater!",
+        "description": "On this page you will find all people and services part of the open Prenninger surname-community."
+    },
+    "people": [
+        {
+            "id": "david-prenninger",
+            "name": "David Prenninger",
+            "short": "Computer Science Student, Freelancer, Optimist",
+            "image": "me4.jpg"
+        },
+        {
+            "id": "johann-prenninger",
+            "name": "Dr. Johann Prenninger",
+            "short": "Computer Science Student, Freelancer, Optimist",
+            "image": "johann_hs.jpg"
+        },
+        {
+            "id": "lea-prenninger",
+            "name": "Lea Prenninger",
+            "short": "Computer Science Student, Freelancer, Optimist",
+            "image": "johann_gr.jpg"
+        },
+        {
+            "id": "ulli-prenninger",
+            "name": "Ulrike Prenninger Graf",
+            "short": "Computer Science Student, Freelancer, Optimist",
+            "image": "profile.png"
+        }
+    ],
+    "services": [
+        {
+            "title": "Prenninger-Charging",
+            "description": "Charging Service monitoring electric vehicles charging processes at Gröbenzell, Germany",
+            "link": "https://charging.prenninger.de"
+        },
+        {
+            "title": "IT-Consulting / Custom Software Engineering",
+            "description": "Since 2019 David Prenninger is working as IT-Consultant and Freelance Application developer.",
+            "link": "/david"
+        },
+        {
+            "title": "Prenninger-Mail",
+            "description": "A mail service for all members of the Prenninger community",
+            "link": "https://mail.prenninger.de"
+        }
+    ]
+}

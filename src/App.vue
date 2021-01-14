@@ -11,8 +11,9 @@
     text-align: center;
     color: $c-primary;
     background-color: $c-white;
-    height: 100%;
     font-family: $font;
     margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
   }
 </style>
