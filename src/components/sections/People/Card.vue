@@ -28,6 +28,9 @@ export default {
     align-items: center;
     padding: $space_md;
     width: 400px;
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
   }
 
   .name {
@@ -43,6 +46,11 @@ export default {
     height: 200px;
     transition: box-shadow 0.5s ease-in-out;
     filter: grayscale(1);
+    @media (max-width: 900px) {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
 
     &--active {
       top: -110px;

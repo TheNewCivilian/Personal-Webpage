@@ -75,6 +75,9 @@ export default {
 
     &__person {
       z-index: 2;
+      @media (max-width: 900px) {
+        margin-top: 100px;
+      }
     }
 
     &__content {

@@ -34,6 +34,9 @@ export default {
   height: 100vh;
   scroll-snap-align: start;
   padding: 0 30px;
+  @media (max-width: 840px) {
+    flex-direction: column;
+  }
 }
 
 .title {

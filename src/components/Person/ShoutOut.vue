@@ -71,12 +71,12 @@ export default {
 
     &__button {
       font-family: 'Roboto', sans-serif;
-      border: 1px solid $c-accent;
+      border: 0;
       color: $c-white;
       font-weight: 600;
       width: fit-content;
       margin: 0 0 0 auto;
-      box-shadow: $bs-primary;
+      box-shadow: none;
       border-radius: $br-md;
       background-color: $c-accent;
       padding: $space-sm $space-md;
@@ -86,7 +86,7 @@ export default {
 
       &:hover {
         background-color: lighten($c-accent,1);
-        box-shadow: none;
+        box-shadow: $bs-primary;
       }
     }
   }

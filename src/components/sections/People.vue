@@ -1,7 +1,5 @@
 <template>
   <section class="content" id="people">
-      <h2 class="title">
-      </h2>
       <div
         class="circle"
       >
@@ -12,7 +10,7 @@
           </p>
           <button
             class="more b-lite"
-            @click="openProfile"
+            @click="openProfile(active)"
           >
             More
           </button>
@@ -41,6 +39,29 @@
           :active="active == 3"
           @selected="setActive(3)"
         />
+      </div>
+      <div class="list">
+        <div
+          class="person"
+          v-for="(person, index) in people"
+          :key="`person-${index}`"
+        >
+          <Card
+            :image="person.image"
+          />
+          <div class="circle-center">
+            <span class="name">{{person.name}}</span>
+            <p>
+              {{person.short}}
+            </p>
+            <button
+              class="more b-lite"
+              @click="openProfile(index)"
+            >
+              More
+            </button>
+          </div>
+        </div>
       </div>
   </section>
 </template>
@@ -73,11 +94,11 @@ export default {
         this.loop();
       }, 3000);
     },
-    openProfile() {
+    openProfile(index) {
       this.$router.push({
         name: 'person',
         params: {
-          personId: this.people[this.active].id,
+          personId: this.people[index].id,
         },
       });
     },
@@ -91,12 +112,18 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
 
-  .title {
-      font-size: 42px;
-      font-weight: 600;
+  .list {
+    @media (min-width: 900px) {
+      display: none;
+    }
+    .person {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .circle {
@@ -109,11 +136,22 @@ export default {
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 900px) {
+      display: none;
+    }
+
     &-center {
       text-align: left;
 
       .name {
         font-size: 42px;
+      }
+
+      @media (max-width: 900px) {
+        .name {
+          font-size: 24px;
+        }
+        text-align: center;
       }
     }
 

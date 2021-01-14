@@ -52,7 +52,6 @@ export default {
     text-align: left;
     max-width: 30%;
     height: 25%;
-    margin-left: -2%;
 
     .description {
       color: $c-primary-lighter;
@@ -75,6 +74,12 @@ export default {
       25%  {margin-top: 0;}
       50%  {margin-top:  20px;}
       100% {margin-top: 0;}
+    }
+  }
+
+  @media (max-width: 840px) {
+    .container {
+       max-width: 60%;
     }
   }
 }

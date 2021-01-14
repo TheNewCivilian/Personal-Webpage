@@ -58,6 +58,7 @@ export default {
   .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .title {
@@ -69,6 +70,14 @@ export default {
   .menu-entry {
     margin: 0 $space-sm;
     cursor: pointer;
+  }
+}
+@media (max-width: 840px) {
+  .navbar {
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    margin: $space_sm 0;
   }
 }
 </style>
