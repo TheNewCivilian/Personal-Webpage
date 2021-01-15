@@ -25,6 +25,7 @@
 import MapMarkerOutline from 'vue-material-design-icons/MapMarker.vue';
 import EmailOutline from 'vue-material-design-icons/EmailOutline.vue';
 import Github from 'vue-material-design-icons/GithubCircle.vue';
+import users from '@/helpers/users';
 import ProfilePicture from './ProfilePicture.vue';
 
 export default {
@@ -36,8 +37,7 @@ export default {
   },
   data() {
     return {
-      // eslint-disable-next-line import/no-dynamic-require, global-require
-      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
+      configuration: users[this.$route.params.personId],
     };
   },
   computed: {

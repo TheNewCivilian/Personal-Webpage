@@ -21,6 +21,7 @@
 
 <script>
 import ProgressBar from '@/components/Person/ProgressBar.vue';
+import users from '@/helpers/users';
 
 export default {
   components: {
@@ -28,8 +29,7 @@ export default {
   },
   data() {
     return {
-      // eslint-disable-next-line import/no-dynamic-require, global-require
-      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
+      configuration: users[this.$route.params.personId],
     };
   },
 };

@@ -20,14 +20,14 @@
 <script>
 import LifeLineEntry from '@/components/Person/LifeLineEntry.vue';
 import LifeLineSwitch from '@/components/Person/LifeLineSwitch.vue';
+import users from '@/helpers/users';
 
 export default {
   data() {
     return {
       switchOptions: ['cv', 'projects'],
       selectedOption: 'cv',
-      // eslint-disable-next-line import/no-dynamic-require, global-require
-      configuration: require(`@/data/people/${this.$route.params.personId}.json`),
+      configuration: users[this.$route.params.personId],
       fadeOut: false,
     };
   },
