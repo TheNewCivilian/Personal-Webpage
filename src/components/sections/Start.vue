@@ -35,45 +35,47 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/variables.scss";
 .content {
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  scroll-snap-align: start;
-
-  .tree {
-    height: 50%;
+  @media (max-width: 900px) {
+    height: calc(100vh - 50px);
   }
 
   .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     text-align: left;
     max-width: 30%;
-    height: 25%;
+    height: fit-content;
 
     .description {
       color: $c-primary-lighter;
-      font-size: 24px;
+      font-size: $font-lg;
     }
 
     .title {
-      font-size: 42px;
+      font-size: $font-slg;
       font-weight: 600;
       margin: 0;
     }
 
     .chevron-down {
+      position: absolute;
+      bottom: -20px;
       width: 50px;
       animation: move 1s infinite;
     }
 
     @keyframes move {
-      0%   {margin-top: 0;}
-      25%  {margin-top: 0;}
-      50%  {margin-top:  20px;}
-      100% {margin-top: 0;}
+      0%   {bottom: -20px;}
+      25%  {bottom: -20px;}
+      50%  {bottom: -40px;}
+      100% {bottom: -20px;}
     }
   }
 

@@ -27,7 +27,6 @@ export default {
     display: flex;
     align-items: center;
     padding: $space_md;
-    width: 400px;
     @media (max-width: 900px) {
       justify-content: center;
     }

@@ -13,7 +13,7 @@
     <div>
       <span class="menu-entry" @click="scrollToSection('#people')">People</span>
       <span class="menu-entry" @click="scrollToSection('#services')">Services</span>
-      <a class="menu-entry" href="https://mail.prenninger.de">Mail</a>
+      <a class="menu-entry" href="https://mail.prenninger.de/mail">Mail</a>
     </div>
   </nav>
 </template>
@@ -72,9 +72,10 @@ export default {
     cursor: pointer;
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 1500px) {
   .navbar {
-    position: absolute;
+    scroll-snap-align: start;
+    position: relative;
     flex-direction: column;
     width: 100vw;
     margin: $space_sm 0;

@@ -24,9 +24,14 @@ export default {
   padding: $space_md;
   margin: $space_lg;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   text-align: left;
   width: 80%;
+
+  @media (max-width: 900px) {
+    margin: 10%;
+  }
 
   .title {
     font-size: 24px;

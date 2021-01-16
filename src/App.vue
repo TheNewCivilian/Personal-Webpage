@@ -16,4 +16,9 @@
     height: 100%;
     scroll-behavior: smooth;
   }
+  @media (max-width: 450px) {
+    html {
+      font-size: 12px;
+    }
+  }
 </style>

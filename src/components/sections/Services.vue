@@ -1,5 +1,5 @@
 <template>
-  <div class="content"  id="services">
+  <section class="content"  id="services">
     <h2 class="title">
       Services
     </h2>
@@ -10,7 +10,7 @@
         :service="service"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -28,22 +28,25 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/defaults.scss";
 .content {
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
-  scroll-snap-align: start;
   padding: 0 30px;
   @media (max-width: 840px) {
     flex-direction: column;
+    height: fit-content;
+    padding: 0 0;
   }
 }
 
 .title {
   font-size: 100px;
-  color: $c-primary-lightest;
+  color: lighten($c-primary-lightest, 30);
+  @media (max-width: 840px) {
+    font-size: 84px;
+  }
 }
 
-.service-list {
-}
 </style>

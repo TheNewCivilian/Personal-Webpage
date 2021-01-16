@@ -1,5 +1,9 @@
 <template>
   <section class="content" id="people">
+      <span class="invite">
+        This page is intended to serve all Prenningers. If you want to join the circle
+        <a href="mailto:info@prenninger.de"> reach out to us!</a>
+      </span>
       <div
         class="circle"
       >
@@ -109,13 +113,16 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/defaults.scss";
 .content {
+  scroll-snap-align: start;
+  position: relative;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  scroll-snap-align: start;
 
   .list {
+    margin-bottom: 50px;
     @media (min-width: 900px) {
       display: none;
     }
@@ -130,6 +137,7 @@ export default {
     position: relative;
     width: 600px;
     height: 600px;
+    margin: 100px 0;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     display: flex;
@@ -184,5 +192,17 @@ export default {
 }
 .accent {
   color: $c-accent;
+}
+.invite {
+  position: relative;
+  margin: 0 20px;
+  @media (max-width: 900px) {
+    bottom: 0;
+  }
+  color: $c-primary-lighter;
+
+  a {
+    text-decoration: underline;
+  }
 }
 </style>

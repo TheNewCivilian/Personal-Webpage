@@ -1,7 +1,7 @@
 <template>
     <div>
-      <Menue />
       <div class="page">
+        <Menue />
         <Start />
         <People />
         <Services />
@@ -25,9 +25,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
   .page {
-    height: 100%;
-    scroll-snap-type: y mandatory;
+    height: 100vh;
+    scroll-snap-type: none;
+    overflow-y: scroll;
+    @media (min-height: 900px) {
+     scroll-snap-type: y mandatory;
+    }
   }
 </style>
