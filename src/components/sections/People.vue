@@ -12,12 +12,13 @@
           <p>
             {{people[active].short}}
           </p>
-          <button
+          <a
             class="more b-lite"
-            @click="openProfile(active)"
+            v-if="people[active].more"
+            :href="people[active].more"
           >
             More
-          </button>
+          </a>
         </div>
         <Card
           class="person person--pos1"
@@ -58,12 +59,13 @@
             <p>
               {{person.short}}
             </p>
-            <button
+            <a
               class="more b-lite"
-              @click="openProfile(index)"
+              v-if="people[index].more"
+              :href="people[index].more"
             >
               More
-            </button>
+            </a>
           </div>
         </div>
       </div>

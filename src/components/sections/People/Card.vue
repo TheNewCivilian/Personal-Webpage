@@ -43,6 +43,7 @@ export default {
     left: -100px;
     border-radius: 50%;
     height: 200px;
+    width: 200px;
     transition: box-shadow 0.5s ease-in-out;
     filter: grayscale(1);
     @media (max-width: 900px) {
