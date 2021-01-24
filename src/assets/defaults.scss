@@ -11,7 +11,7 @@
 }
 
 .b-lite {
-  background-color: $c-white;
+  background-color: $c-primary-nuance;
   border-radius: $br-md;
   padding: $space-sm $space-md;
   color: $c-primary;
@@ -19,6 +19,11 @@
   box-shadow: $bs-primary;
   font-family: $font;
   cursor: pointer;
+  transition: box-shadow 0.5s;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .b-text{
