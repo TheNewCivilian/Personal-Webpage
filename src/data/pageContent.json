@@ -1,49 +1,14 @@
 {
-    "title": "Prenninger",
-    "start" : {
-        "pretitle":"We are the Prenningers!",
-        "title": "Welcome to our digital headquarter!",
-        "description": "On this page you will find all people and services part of the open Prenninger surname-community."
-    },
-    "people": [
-        {
-            "id": "david-prenninger",
-            "name": "David Prenninger",
-            "short": "Computer Science Student, Freelancer, Optimist",
-            "image": "david.jpg",
-            "more": "/david-prenninger"
-        },
-        {
-            "id": "johann-prenninger",
-            "name": "Dr. Johann Prenninger",
-            "short": "Head of Analytics, BMW",
-            "image": "johann.jpg",
-            "more": "https://www.linkedin.com/in/johannprenninger/"
-        },
-        {
-            "id": "ulli-prenninger",
-            "name": "Ulrike Prenninger Graf",
-            "short": "Social behavioral sciences, certified dyslexia trainer, learning coach",
-            "image": "ulli.jpg",
-            "more": "https://www.obermenzinger.de/index.php/schulprofil/psychologische-betreuung"
-        },
-        {
-            "id": "lea-prenninger",
-            "name": "Lea Prenninger",
-            "short": "Engineering Student at TUM Munich",
-            "image": "lea.jpg"
-        }
-    ],
-    "services": [
-        {
-            "title": "IT-Consulting / Custom Software Engineering",
-            "description": "Since 2019 David Prenninger is working as IT-Consultant and Freelance Application developer.",
-            "link": "/david-prenninger"
-        },
-        {
-            "title": "Prenninger-Mail",
-            "description": "A mail service for all members of the Prenninger community",
-            "link": "https://mail.prenninger.de/mail"
-        }
+    "title": "Prenninger.de",
+    "phrases": [
+        "If you need a *software prototype* fast ..",
+        "You search for a *digital solutions*?",
+        "If you need to know more about *David* ..",
+        "If you need to know more about *Hans* ..",
+        "If you need to know more about *Lea* ..",
+        "If you want to talk about *railways* ..",
+        "You want to talk about *change*?",
+        "If you want to talk about *sustainable mobility* ..",
+        "If you need to know more about *Ulli* .."
     ]
 }

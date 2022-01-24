@@ -5,7 +5,6 @@
     @swipe="toggleDetails"
     ref="rootDiv"
   >
-    <Menue />
     <PersonCard
       class="home__person"
     />
@@ -30,13 +29,11 @@
 </template>
 
 <script>
-import SwipeListener from 'swipe-listener';
 import PersonCard from '@/components/Person/PersonCard.vue';
 import Skills from '@/components/Person/Skills.vue';
 import LifeLine from '@/components/Person/LifeLine.vue';
 import ShoutOut from '@/components/Person/ShoutOut.vue';
 import ArrowDown from 'vue-material-design-icons/ArrowDown.vue';
-import Menue from '../components/Menue.vue';
 
 export default {
   name: 'Home',
@@ -46,18 +43,11 @@ export default {
     LifeLine,
     ArrowDown,
     ShoutOut,
-    Menue,
   },
   computed: {
     detailsShown() {
       return this.$store.getters.detailsShown;
     },
-  },
-  created() {
-    window.scrollTo(0, 0);
-  },
-  mounted() {
-    SwipeListener(this.$refs.rootDiv);
   },
   methods: {
     toggleDetails() {

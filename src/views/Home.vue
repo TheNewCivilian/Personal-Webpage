@@ -1,37 +1,18 @@
 <template>
     <div>
-      <div class="page">
-        <Menue />
-        <Start />
-        <People />
-        <Services />
-      </div>
+      <LandingBox />
     </div>
 </template>
 
 <script>
-import Menue from '../components/Menue.vue';
-import People from '../components/sections/People.vue';
-import Services from '../components/sections/Services.vue';
-import Start from '../components/sections/Start.vue';
+import LandingBox from '../components/LandingBox.vue';
 
 export default {
   components: {
-    Menue,
-    Start,
-    People,
-    Services,
+    LandingBox,
   },
 };
 </script>
 
 <style lang="scss">
-  .page {
-    height: 100vh;
-    scroll-snap-type: none;
-    overflow-y: scroll;
-    @media (min-height: 900px) {
-     scroll-snap-type: y mandatory;
-    }
-  }
 </style>
