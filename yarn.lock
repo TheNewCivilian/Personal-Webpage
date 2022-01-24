@@ -8247,6 +8247,11 @@ vue-material-design-icons@^4.4.0:
   resolved "https://registry.yarnpkg.com/vue-material-design-icons/-/vue-material-design-icons-4.4.0.tgz#57b213abd0fc29dd20b14f0627a51ed70293fb03"
   integrity sha512-5SkO9ijY2jIjVmypliBWBMUB6i4ovbX2BwLqSNozRBcY7lb32+GzHrDkumoDwEMOHxe8gO6tIZimOYfBySQ+LQ==
 
+vue-matomo@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/vue-matomo/-/vue-matomo-4.1.0.tgz#17b513bc8ac60e168bfa8190ad05b3257a3c441e"
+  integrity sha512-y+tdmhY835Ip3EAGfIAgA33+aBYrvRT7fNnBnA7bSM459XpoWXgqJKdbopVpEUrxCPIq8IkuF7g4KqSLc0Fa3w==
+
 vue-router@^3.1.5:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.6.tgz#45f5a3a3843e31702c061dd829393554e4328f89"
