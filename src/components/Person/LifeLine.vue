@@ -71,10 +71,10 @@ export default {
     }
 
     &__seperator {
-      margin-left: 42px;
-      width: 5px;
+      margin-left: 45px;
+      width: 2px;
       height: 50px;
-      background-color: $c-primary-lighter;
+      background-color: $c-primary-lightest;
     }
   }
 

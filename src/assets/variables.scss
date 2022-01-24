@@ -3,14 +3,14 @@ $c-primary-lighter: rgba($c-primary,.6);
 $c-primary-lightest: rgba($c-primary,.1);
 $c-primary-nuance: rgba($c-primary,.05);
 $c-white: #fff;
+$c-white-grayish: #FCFCFC;
 $c-black: #000;
 $c-accent: #07beb8;
 $c-red: #DB504A;
 $c-orange: #DD7230;
 $c-yellow:  #F4C95D;
 
-$bs-primary:  -8px 8px 16px rgba($c-primary,.3),
-              8px -8px 16px #ffffff;
+$bs-primary:  10px 10px 14px -7px $c-primary-lightest;
 
 $bs-primary-darker:  -8px 8px 16px rgba($c-primary,.6),
               8px -8px 16px #ffffff;

@@ -62,6 +62,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/variables.scss";
+
 .lb {
   height: 100vh;
   display: flex;
@@ -70,11 +72,11 @@ export default {
 
   &__card {
     position: relative;
-    background-color: #FCFCFC;
+    background-color: $c-white-grayish;
     width: 80%;
     height: 50%;
-    box-shadow: 10px 10px 14px -7px rgba(240,240,240,1);
-    color: #878787;
+    box-shadow: $bs-primary;
+    color: $c-primary-lighter;
 
     &__catcher {
       position: absolute;

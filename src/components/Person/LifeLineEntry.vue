@@ -88,8 +88,13 @@ export default {
   .entry {
     position: relative;
     margin-top: $space-md;
-    box-shadow: $bs-primary;
     border-radius: $br-md;
+    border: 1px solid $c-primary-lightest;
+    transition: box-shadow .5s;
+
+    &:hover {
+      box-shadow: $bs-primary;
+    }
 
     &__icon {
       position: absolute;
@@ -104,7 +109,7 @@ export default {
       display: flex;
       align-content: center;
       justify-content: center;
-      box-shadow: $bs-primary;
+      border: 1px solid $c-primary-lightest;
 
       &-off {
         margin-bottom: 5px;
