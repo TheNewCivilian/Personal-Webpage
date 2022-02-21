@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  prenninger_de:
+    image: "prenninger_de:latest"
+    build: .
+    container_name: "prenninger_de"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.prenninger_de.rule=Host(`prenninger.de`)"
+      - "traefik.http.routers.prenninger_de.entrypoints=websecure"
+      - "traefik.http.routers.prenninger_de.tls=true"
+      - "traefik.http.routers.prenninger_de.tls.certResolver=lets_encrypt"

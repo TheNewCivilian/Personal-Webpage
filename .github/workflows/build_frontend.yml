@@ -4,10 +4,8 @@ on:
   push:
     branches: master
 
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -15,23 +13,21 @@ jobs:
         node-version: [14.x]
 
     steps:
+      - name: Setup ssh
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-host: ${{secrets.SSH_HOST}}
+
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Prepare
+      - name: Install Docker Compose
         run: |
-          npm i
-      - name: Build
+          cd /tmp 
+          wget https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -O docker-compose
+          chmod 700 docker-compose
+
+      - name: Deploy to Docker Host
         run: |
-          npm run build
-      - name: Publish
-        uses: nogsantos/scp-deploy@master
-        with:
-          src: ./dist/*
-          host: ${{ secrets.SSH_HOST }}
-          remote: ${{ secrets.SSH_DIR }}
-          port: ${{ secrets.SSH_PORT }}
-          user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          /tmp/docker-compose -H ssh://${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} up -d
+
+        
