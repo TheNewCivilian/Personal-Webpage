@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  prenninger_de:
+    image: "prenninger_de:latest"
+    build: https://github.com/TheNewCivilian/Personal-Webpage
+    container_name: "prenninger_de"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`prenninger.de`)"
+      - "traefik.http.routers.whoami.entrypoints=websecure"
