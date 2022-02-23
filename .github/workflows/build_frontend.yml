@@ -8,10 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
       - name: Setup ssh
         uses: kielabokkie/ssh-key-and-known-hosts-action@v1
@@ -28,6 +24,6 @@ jobs:
 
       - name: Deploy to Docker Host
         run: |
-          /tmp/docker-compose -H ssh://${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} up -d
+          /tmp/docker-compose -H ssh://${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} up --build -d
 
         

@@ -8,8 +8,8 @@ import 'vue-material-design-icons/styles.css';
 Vue.config.productionTip = false;
 
 Vue.use(VueMatomo, {
-  host: 'https://analytics.raildeals.org',
-  siteId: 2,
+  host: 'https://matomo.prenninger.de/',
+  siteId: 1,
   trackerFileName: 'matomo',
   router,
   disableCookies: true,
