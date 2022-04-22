@@ -58,6 +58,12 @@ export default {
     width: 250px;
   }
 
+  @media (min-width: 1600px) {
+    position: fixed;
+    margin-top: $space-lg;
+    right: calc(50% - 600px);
+  }
+
   &__title {
     font-size: 24px;
     margin: 10px 0;

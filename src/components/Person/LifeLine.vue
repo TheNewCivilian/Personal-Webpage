@@ -58,6 +58,11 @@ export default {
     margin: 20px auto;
     margin-top: 50px;
 
+    @media (min-width: 1600px) {
+      flex-grow: 1;
+      margin: 20px 20px;
+    }
+
     &__timeline {
       padding: 20px;
 

@@ -10,7 +10,7 @@
       class="shout-out__button"
       @click="sendMail"
     >
-      Contact me!
+      {{configuration.shoutOut.contact}}
     </button>
   </div>
 </template>
@@ -59,26 +59,36 @@ export default {
       margin-right: 15px;
     }
 
+
+    @media (min-width: 1600px) {
+      position: fixed;
+      flex-direction: column;
+      max-width: 395px;
+      margin: $space-lg 15px 0;
+      height: fit-content;
+      left: calc(50% - 780px);
+    }
+
     &__title {
-      font-size: 30px;
+      font-size: $font-lg;
       text-align: left;
     }
 
     &__description {
       color: $c-primary-lighter;
       text-align: left;
-      font-size: 20px;
+      font-size: $font-md;
     }
 
     &__button {
       font-family: 'Roboto', sans-serif;
+      font-size: $font-md;
       border: 0;
       color: $c-white;
-      font-weight: 600;
       width: fit-content;
       margin: 0 0 0 auto;
       box-shadow: none;
-      border-radius: $br-md;
+      border-radius: 50px;
       background-color: $c-accent;
       padding: $space-sm $space-md;
       transition: background-color 1s;

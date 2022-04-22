@@ -18,11 +18,18 @@
         v-if="detailsShown"
         class="home__content"
       >
-        <div class="home__content__side">
+        <div class="home__content__mobile">
+          <div class="home__content__side">
+            <ShoutOut />
+            <Skills />
+          </div>
+          <LifeLine />
+        </div>
+        <div class="home__content__desktop">
           <ShoutOut />
+          <LifeLine />
           <Skills />
         </div>
-        <LifeLine />
       </div>
     </transition>
   </div>
@@ -71,12 +78,8 @@ export default {
     }
 
     &__content {
-      display: flex;
       z-index: 2;
-      justify-content: center;
-      align-content: center;
       height: fit-content;
-      flex-direction: column;
 
       &__side {
         display: flex;
@@ -85,6 +88,24 @@ export default {
 
         @media (min-width: 840px) {
           flex-direction: row;
+        }
+      }
+
+      &__mobile {
+        display: none;
+        @media (max-width: 1600px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+        }
+      }
+
+      &__desktop {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 1600px) {
+          display: none;
         }
       }
     }

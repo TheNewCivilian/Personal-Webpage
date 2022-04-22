@@ -5,7 +5,7 @@ $c-primary-nuance: rgba($c-primary,.05);
 $c-white: #fff;
 $c-white-grayish: #FCFCFC;
 $c-black: #000;
-$c-accent: #07beb8;
+$c-accent: #47629b; // #07beb8;
 $c-red: #DB504A;
 $c-orange: #DD7230;
 $c-yellow:  #F4C95D;
@@ -17,8 +17,9 @@ $bs-primary-darker:  -8px 8px 16px rgba($c-primary,.6),
 
 $br-md: 10px;
 
-$space-lg: 30px;
-$space-md: 20px;
+$space-slg: 64px;
+$space-lg: 32px;
+$space-md: 24px;
 $space-sm: 8px;
 
 $font-sm: 1rem;
