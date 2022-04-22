@@ -5,14 +5,14 @@
   "email": "david@prenninger.de",
   "github": "TheNewCivilian",
   "shoutOut": {
-    "title": "Hello World!",
+    "title": "Hi I'm David!",
     "description": "I am curious about your ideas, projects and challanges. Since my study is empowering me to make software in all different ways I always try to improve my personal workflow and solve daily problems. Despite my tech-hobbies I love running, traveling and being part of social projects. I'm always in search for the most promising and productive approach to achieve my goals.",
-    "contact":"Contact me!"
+    "contact":"Write me!"
   },
   "skills": [
     {
       "title": "JavaScript",
-      "examples": ["Vue","React","Vanilla","Redux","Node"],
+      "examples": ["Vue","Svelte","React","Vanilla","Redux","Node"],
       "value": 80
     },
     {
@@ -42,12 +42,48 @@
     }
   ],
   "cv": [
-
+    {
+      "type":"education",
+      "title": "University of applied sciences St. Pölten",
+      "subtitle": "Rail Technology and Management of Railway Systems",
+      "date": "since 2021",
+      "details": [
+        {
+          "type": "web",
+          "text":"",
+          "linkURL":"https://www.fhstp.ac.at/",
+          "linkText":"Show university page",
+          "logo":"/img/fh_stpoelten.jpg"
+        }
+      ]
+    },
+    {
+      "type":"business",
+      "title": "Freelancer - Software Development",
+      "subtitle": "In addition to my studies and work, I work as freelancer. If you have any request, don't hesitate to contact me.",
+      "date": "since 2019",
+      "details": []
+    },
+    {
+      "type":"work",
+      "title": "Cofounder of CargoRocket",
+      "subtitle": "Improving cargo-bike routing systems",
+      "date": "2021 - 2022",
+      "details": [
+        {
+          "type": "web",
+          "text":"",
+          "linkURL":"https://cargorocket.de",
+          "linkText":"Show on website",
+          "logo":"/img/cargorocket_small.png"
+        }
+      ]
+    },
     {
       "type":"business",
       "title": "Research Associate - Augsburg University",
       "subtitle": "Working for the academic chair of Prof. Dr. Bauer.",
-      "date": "Since 2018",
+      "date": "2018 - 2021",
       "details": [{
         "type": "web",
         "text":"",
@@ -55,13 +91,6 @@
         "linkURL":"http://qbilon.io",
         "logo":"/img/qbilon.png"
       }]
-    },
-    {
-      "type":"business",
-      "title": "Freelancer - Software Development",
-      "subtitle": "In addition to my studies and work, I work as freelancer. If you have any request, don't hesitate to contact me.",
-      "date": "Since 2019",
-      "details": []
     },
     {
       "type":"business",
@@ -73,7 +102,7 @@
         "text":"",
         "linkText":"Eurail.eu",
         "linkURL":"http://eurail.com",
-        "logo":"/img/eurail.svg"
+        "logo":"/img/eurail_new.jpg"
       }]
     },
     {
@@ -94,15 +123,21 @@
       "type":"social",
       "title": "Member of the student association",
       "subtitle": "Organising events and supporting students in their needs. ",
-      "date": "Since 2016",
+      "date": "2016 - 2021",
       "details": []
     },
     {
       "type":"education",
       "title": "Study at University of Augsburg",
-      "subtitle": "Computer Science Study",
-      "date": "Since 2016",
-      "details": []
+      "subtitle": "Computer Science B.c.",
+      "date": "2016 - 2021",
+      "details": [{
+        "type": "web",
+        "text":"",
+        "linkURL":"https://www.uni-augsburg.de/",
+        "linkText":"Show university page",
+        "logo":"/img/uni_a.jpg"
+      }]
     },
     {
       "type":"education",
@@ -155,6 +190,27 @@
     }
   ],
   "projects": [
+    {
+      "type":"work",
+      "title": "Math4Innovation",
+      "subtitle": "Researching predicting maintenance methods suited for rail vehicles",
+      "date": "2022",
+      "details": [
+        {
+          "type": "web",
+          "text":"Check findings",
+          "linkURL":"https://math4innovation.de/index.php?id=92",
+          "linkText":"math4innovation.de"
+        },
+        {
+          "type": "web",
+          "text":"DB Analytics",
+          "linkURL":"https://math4innovation.de/index.php?id=92",
+          "linkText":"Check Innovation Partner",
+          "logo":"/img/db.svg"
+        }
+      ]
+    },
     {
       "type":"work",
       "title": "Kingscastle.io",
