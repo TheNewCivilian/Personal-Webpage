@@ -6,7 +6,7 @@
   "github": "TheNewCivilian",
   "shoutOut": {
     "title": "Hi I'm David!",
-    "description": "I am curious about your ideas, projects and challanges. Since my study is empowering me to make software in all different ways I always try to improve my personal workflow and solve daily problems. Despite my tech-hobbies I love running, traveling and being part of social projects. I'm always in search for the most promising and productive approach to achieve my goals.",
+    "description": "I am curious about your ideas, projects and challenges. Since my study is empowering me to make software in all different ways I always try to improve my personal workflow and solve daily problems. Despite my tech-hobbies I love running, traveling and being part of social projects. I'm always in search for the most promising and productive approach to achieve my goals.",
     "contact":"Write me!"
   },
   "skills": [
@@ -95,7 +95,7 @@
     {
       "type":"business",
       "title": "Internship - Eurail BV.",
-      "subtitle": "7 month Front-End Intern at an international Travel company",
+      "subtitle": "7 month frontend intern at an international travel company",
       "date": "2020",
       "details": [{
         "type": "web",
@@ -108,21 +108,21 @@
     {
       "type":"social",
       "title": "Youth exchange Program Tanzania",
-      "subtitle": "Discussing topics around justice and fairness together with 10 Tanzanians.",
+      "subtitle": "Discussing topics around justice and fairness together with 10 tanzanians.",
       "date": "2018",
       "details": []
     },
     {
       "type":"business",
       "title": "IT Support & Developer - IT.WiWi Augsburg University",
-      "subtitle": "Serviced and monitored over 900 devices. Worked with Highly automated processes and software rollouts.",
+      "subtitle": "Serviced and monitored over 900 devices. Worked with highly automated processes and software rollouts.",
       "date": "March - August 2018",
       "details": []
     },
     {
       "type":"social",
       "title": "Member of the student association",
-      "subtitle": "Organising events and supporting students in their needs. ",
+      "subtitle": "Organizing events and supporting students in their needs. ",
       "date": "2016 - 2021",
       "details": []
     },
@@ -142,7 +142,7 @@
     {
       "type":"education",
       "title": "A Level - Gymnasium Gröbenzell",
-      "subtitle": "Rigged, monitored and organized big school events. ",
+      "subtitle": "",
       "date": "2016",
       "details": []
     },
@@ -163,14 +163,14 @@
     {
       "type":"competition",
       "title": "Second place in state \"Jugend Forscht\"",
-      "subtitle": "Participated with an automated charging station station for messuring capacity differences of AAA accumulators.",
+      "subtitle": "Participated with an automated charging station station for measuring capacity differences of AAA accumulators.",
       "date": "2014",
       "details": []
     },
     {
       "type":"business",
       "title": "Internship - AscTec",
-      "subtitle": "Worked in the production of the leading UAS drone technology developer & manu­facturer.",
+      "subtitle": "Worked in the production of the leading UAS drone technology developer & manufacturer. Later subsidiary of Intel.",
       "date": "2014",
       "details": [
         {
@@ -259,7 +259,7 @@
     {
       "type":"work",
       "title": "COVID-19 Dashboard",
-      "subtitle": "Combining and displaying Data of different distributors about the COVID-19 crisis.",
+      "subtitle": "Combining and displaying data of different distributors about the COVID-19 crisis.",
       "date": "2020",
       "details": [
         {
@@ -274,7 +274,7 @@
     {
       "type":"work",
       "title": "SWA Hackathon \"Neue Wege Augsburg\"",
-      "subtitle": "Developed a multimodal transportation API + adapted a Alexa Skilll as Service in only 24 hours.",
+      "subtitle": "Developed a multimodal transportation API + adapted a Alexa Skilll as service in only 24 hours.",
       "date": "2018",
       "details": [
         {
