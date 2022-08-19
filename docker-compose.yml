@@ -5,6 +5,7 @@ services:
     image: "prenninger_de:latest"
     build: .
     container_name: "prenninger_de"
+    restart: always
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.prenninger_de.rule=Host(`prenninger.de`) || Host(`www.prenninger.de`)"
