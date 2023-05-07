@@ -1,6 +1,6 @@
 {
   "name":"David Prenninger",
-  "subtitle":"Optimist, Developer, Supporter",
+  "subtitle":"Car-free Mobility Enthusiast, Optimist, Developer",
   "location": "Europe",
   "email": "david@prenninger.de",
   "github": "TheNewCivilian",
@@ -12,7 +12,7 @@
   "skills": [
     {
       "title": "JavaScript",
-      "examples": ["Vue","Svelte","React","Vanilla","Redux","Node"],
+      "examples": ["Vanilla","Vue","Svelte","React","Redux","Node"],
       "value": 80
     },
     {
@@ -21,19 +21,24 @@
       "value": 80
     },
     {
-      "title": "Java",
+      "title": "Rust",
       "examples": [],
-      "value": 60
-    },
-    {
-      "title": "Dart",
-      "examples": ["Flutter"],
       "value": 55
     },
     {
       "title": "C",
       "examples": [],
       "value": 50
+    },
+    {
+      "title": "Dart",
+      "examples": ["Flutter"],
+      "value": 45
+    },
+    {
+      "title": "Java",
+      "examples": [],
+      "value": 40
     },
     {
       "title": "Vala | C# | C++ | Ruby",
@@ -192,6 +197,27 @@
   "projects": [
     {
       "type":"work",
+      "title": "OpenLinePlanner",
+      "subtitle": "An OpenSource prototyping solution for public transport planners",
+      "date": "2022",
+      "details": [
+        {
+          "type": "web",
+          "text":"",
+          "linkURL":"https://openlineplanner.xatellite.space",
+          "linkText":"Demo",
+          "logo":"/img/olp_logo.svg"
+        },
+        {
+          "type": "github",
+          "text":"",
+          "linkURL":"https://github.com/xatellite/OpenLinePlanner",
+          "linkText":"Github"
+        }
+      ]
+    },
+    {
+      "type":"work",
       "title": "Math4Innovation",
       "subtitle": "Researching predicting maintenance methods suited for rail vehicles",
       "date": "2022",
@@ -264,9 +290,9 @@
       "details": [
         {
           "type": "web",
-          "text":"",
-          "linkURL":"https://covid-board.com/",
-          "linkText":"Open Application",
+          "text":"(https://covid-board.com/)",
+          "linkURL":"",
+          "linkText":"Page Discontinued",
           "logo":"/img/covid.svg"
         }
       ]
